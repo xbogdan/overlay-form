@@ -1,0 +1,61 @@
+.of__noscroll {
+  overflow: hidden;
+}
+.of {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: rgba(0,0,0,0.95);
+}
+.of__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  width: 80%;
+  max-width: 300px;
+  padding: 20px;
+  background: #fff;
+}
+.of__label {
+  display: block;
+}
+.of__buttons-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 20px;
+}
+.of__input {
+  display: block;
+  width: 100%;
+  outline: none;
+  text-indent: 5px;
+}
+.of__button {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 0;
+  color: #fff;
+  font-weight: 100;
+  font-size: 16px;
+  outline: none;
+}
+.of__submit {
+  background-color: #1abc9c;
+}
+.of__cancel {
+  background-color: #c0392b;
+}
