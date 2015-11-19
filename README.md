@@ -8,7 +8,8 @@ var overlayForm = new of({
     {
       label: 'Name',
       inputType: 'text',
-      inputName: 'name-field'
+      inputName: 'name-field',
+      value: 'John'
     },
     {
       label: 'Password',
@@ -28,7 +29,8 @@ var overlayForm = new of({
 ```javascript
 label.split(' ').join('-').toLowerCase();
 ```
-<hr>
+
+<br>
 `data` argument of the `finishCallback` function is an `array` of js objects where <br>
 `name` is the `inputName` field
 ```javascript
@@ -37,3 +39,6 @@ label.split(' ').join('-').toLowerCase();
   value: 'John'
 }
 ```
+
+<br>
+`value` field is optional

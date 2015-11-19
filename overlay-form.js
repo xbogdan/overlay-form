@@ -48,7 +48,7 @@
 
     for (var i = 0; i < this.fields.length; i++) {
       var field = this.fields[i];
-      this.addField(field.label, field.inputType, field.inputName);
+      this.addField(field.label, field.inputType, field.inputName, field.value);
     }
 
     var buttonsBox = document.createElement('div');
@@ -79,7 +79,7 @@
     }
   };
 
-  of.prototype.addField = function(labelText, inputType, inputName) {
+  of.prototype.addField = function(labelText, inputType, inputName, value) {
     // label
     var label = document.createElement('label');
     label.innerHTML = labelText;
@@ -98,6 +98,9 @@
       var inputName = labelText.split(' ').join('-').toLowerCase();
     }
     input.setAttribute('name', inputName);
+    if (typeof value !== 'undefined') {
+      input.value = value;
+    }
 
     var container = document.createElement('div');
     this.inputs.push(input);
